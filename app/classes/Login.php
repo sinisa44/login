@@ -13,7 +13,17 @@ class Login extends Model {
         $usr = $this->where( 'email', '=', $email, null );
         
         if( $usr['password'] == $password && $usr['email'] == $email ) {
+
+            Session::set_session('user' , [
+                'email' => $usr['email'],
+                'name'  => $usr['password']
+            ]);
+            
             header( 'Location:index.php?page=main' );
         } 
+   }
+
+   public static function logout() {
+
    }
 }
