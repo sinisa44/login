@@ -11,7 +11,7 @@ class Model {
     }
     
     public function select( $search = [] ) {
-
+ 
         try{
             $stmt = $this->conn( 'SELECT '.self::search( $search ).' FROM '.$this->database.'.'.$this->table );
             $stmt->execute();
@@ -36,7 +36,7 @@ class Model {
             $stmt = $this->conn->prepare( 'INSERT INTO '.$this->database.'.'.$this->table.' ('.$columns.') VALUES ("'.$values.'") ');
             $stmt->execute();
 
-            echo 'insert';
+            return true;
         }catch( PDOException $e ) {
             echo $e->getMessage();
         }

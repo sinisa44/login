@@ -20,6 +20,8 @@ class Login extends Model {
             ]);
             
             header( 'Location:index.php?page=main' );
+        }else {
+            Session::set_session( 'login_err', 'wrong email or password' );
         } 
    }
 
