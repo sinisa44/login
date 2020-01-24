@@ -7,7 +7,7 @@
             <div class="alert alert-danger">
                 register danger
             </div>
-        <?php ?>
+        <?php } ?>
         <form action="" class="form" method="POST">
                 <input type="hidden" name="login" value="register">
                 <div class="form-group">

@@ -25,7 +25,7 @@ class Register extends Model {
                     header( 'Location:index.php?page=login' );
                 }
             }else{
-             Session::set_session( 'password', 'passwords not matched')
+             Session::set_session( 'password', 'passwords not matched' );
             }
         }else{    
             Session::set_session( 'email', 'email or name is required' );
