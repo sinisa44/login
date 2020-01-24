@@ -1,0 +1,16 @@
+{
+    "require": {
+        "twbs/bootstrap": "4.4.1"
+    },
+    "autoload": {
+        "classmap": [
+          "app/classes/dist/Request.php",
+          "app/classes/dist/Auth.php",
+          "app/classes/dist/Session.php",
+          "app/classes/Login.php",
+          "app/classes/Register.php",
+          "app/classes/database/Connection.php",
+          "app/classes/database/Model.php"
+        ]
+      }
+}

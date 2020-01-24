@@ -1,0 +1,16 @@
+.form {
+  background-color: rgba(0, 0, 0, 0.442);
+  padding: 40px;
+}
+
+.form .btn {
+  background-color: #5cbcc7;
+  border: none;
+  color: beige;
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.442) !important;
+  border: none;
+}
+
