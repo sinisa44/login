@@ -16,9 +16,9 @@ class Login extends Model {
 
             Session::set_session('user' , [
                 'email' => $usr['email'],
-                'name'  => $usr['password']
+                'name'  => $usr['name']
             ]);
-            
+
             header( 'Location:index.php?page=main' );
         } 
    }
