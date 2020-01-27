@@ -1,6 +1,9 @@
 <div class="container">    
     <div class="row justify-content-center">
         <div class="col-md-8 p-3 mt-5" id="form-div">
+        <div class="alert alert-danger">
+           login  danger  
+        </div>
             <form action="" class="form" method="POST">
                 <input type="hidden" name="login" value="login">
                 <div class="form-group">
