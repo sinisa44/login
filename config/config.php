@@ -1,5 +1,5 @@
 <?php
-require "../vendor/autoload.php";
+require ("../vendor/autoload.php");
 
 define( 'PAGE', 'index.php?page=' );
 

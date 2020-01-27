@@ -1,6 +1,7 @@
 {
     "require": {
-        "twbs/bootstrap": "4.4.1"
+        "twbs/bootstrap": "4.4.1",
+        "rakit/validation": "^1.2"
     },
     "autoload": {
         "classmap": [
@@ -10,7 +11,8 @@
           "app/classes/Login.php",
           "app/classes/Register.php",
           "app/classes/database/Connection.php",
-          "app/classes/database/Model.php"
+          "app/classes/database/Model.php",
+          "vendor/rakit/validation/src/Validation.php"
         ]
       }
 }

@@ -10,6 +10,7 @@ return array(
     'Connection' => $baseDir . '/app/classes/database/Connection.php',
     'Login' => $baseDir . '/app/classes/Login.php',
     'Model' => $baseDir . '/app/classes/database/Model.php',
+    'Rakit\\Validation\\Validation' => $vendorDir . '/rakit/validation/src/Validation.php',
     'Register' => $baseDir . '/app/classes/Register.php',
     'Request' => $baseDir . '/app/classes/dist/Request.php',
     'Session' => $baseDir . '/app/classes/dist/Session.php',

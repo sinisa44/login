@@ -3,6 +3,7 @@
         <div class="col-md-8 p-3 mt-5" id="form-div">
 
     <?php if( isset( $_SESSION['login_error'])) { ?>
+    
         <div class="alert alert-danger text-center">
            <?= $_SESSION['login_error']  ?>  
         </div>

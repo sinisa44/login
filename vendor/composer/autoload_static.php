@@ -6,11 +6,26 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite728327ed21c341a943a021a9c88b93b
 {
+    public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Rakit\\Validation\\' => 17,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Rakit\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rakit/validation/src',
+        ),
+    );
+
     public static $classMap = array (
         'Auth' => __DIR__ . '/../..' . '/app/classes/dist/Auth.php',
         'Connection' => __DIR__ . '/../..' . '/app/classes/database/Connection.php',
         'Login' => __DIR__ . '/../..' . '/app/classes/Login.php',
         'Model' => __DIR__ . '/../..' . '/app/classes/database/Model.php',
+        'Rakit\\Validation\\Validation' => __DIR__ . '/..' . '/rakit/validation/src/Validation.php',
         'Register' => __DIR__ . '/../..' . '/app/classes/Register.php',
         'Request' => __DIR__ . '/../..' . '/app/classes/dist/Request.php',
         'Session' => __DIR__ . '/../..' . '/app/classes/dist/Session.php',
@@ -19,6 +34,8 @@ class ComposerStaticInite728327ed21c341a943a021a9c88b93b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInite728327ed21c341a943a021a9c88b93b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite728327ed21c341a943a021a9c88b93b::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInite728327ed21c341a943a021a9c88b93b::$classMap;
 
         }, null, ClassLoader::class);

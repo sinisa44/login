@@ -8,6 +8,7 @@
                 <?= (isset( $_SESSION['pasword'] ) ) ? $_SESSION['password'] : $_SESSION['email']  ?>
             </div>
         <?php } ?>
+        
         <form action="" class="form" method="POST">
                 <input type="hidden" name="login" value="register">
                 <div class="form-group">
