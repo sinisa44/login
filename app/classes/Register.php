@@ -26,6 +26,7 @@ class Register extends Model {
                 }
             }else{
              Session::set_session( 'password', 'passwords not matched' );
+             
             }
         }else{    
             Session::set_session( 'email', 'email or name is required' );

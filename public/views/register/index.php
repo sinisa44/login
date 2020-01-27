@@ -3,9 +3,9 @@
       
         <div class="col-md-8 p-3 mt-5" id="form-div">
 
-        <?php if( isset( $_SESSION['password'] ) ) { ?>
+        <?php if( isset( $_SESSION['password'] ) || isset( $_SESSION['email']) ) { ?>
             <div class="alert alert-danger">
-                register danger
+                <?= (isset( $_SESSION['pasword'] ) ) ? $_SESSION['password'] : $_SESSION['email']  ?>
             </div>
         <?php } ?>
         <form action="" class="form" method="POST">

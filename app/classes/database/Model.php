@@ -56,7 +56,7 @@ class Model {
 
             return $res;
             
-        }catch( PDOException $e) {
+        }catch( PDOException $e ) {
             echo $e->getMessage();
         }
     }
